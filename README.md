@@ -1,14 +1,21 @@
-# Rainfall Prediction using Machine Learning
+# Rainfall Prediction
 
-This project predicts whether it will rain tomorrow using historical weather data.
+A machine learning web application that predicts rainfall based on weather parameters.
+
+## Technologies Used
+- Python
+- Flask
+- Pandas
+- NumPy
+- Scikit-learn
+
+## Project Structure
+- app.py
+- src/train_model.py
+- templates/index.html
+- requirements.txt
 
 ## How to Run
-
-1. Install dependencies  
-2. Train the model  
-3. Run Flask app and test predictions
-
-## Author
-
-Moksha Dhar
-
+1. Install dependencies
+2. Train the model
+3. Run app.py
