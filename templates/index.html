@@ -1,0 +1,26 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rainfall Prediction</title>
+</head>
+<body>
+    <h2>Enter Weather Data</h2>
+    <form method="post" action="/predict">
+        <input type="text" name="MinTemp" placeholder="Min Temp"><br>
+        <input type="text" name="MaxTemp" placeholder="Max Temp"><br>
+        <input type="text" name="Rainfall" placeholder="Rainfall"><br>
+        <input type="text" name="Humidity9am" placeholder="Humidity 9am"><br>
+        <input type="text" name="Humidity3pm" placeholder="Humidity 3pm"><br>
+        <input type="text" name="Pressure9am" placeholder="Pressure 9am"><br>
+        <input type="text" name="Pressure3pm" placeholder="Pressure 3pm"><br>
+        <input type="text" name="Temp3pm" placeholder="Temp 3pm"><br>
+        <input type="text" name="RainToday" placeholder="Rain Today"><br>
+        <input type="text" name="WindGustDir" placeholder="Wind Gust Dir"><br>
+        <input type="submit" value="Predict">
+    </form>
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>
